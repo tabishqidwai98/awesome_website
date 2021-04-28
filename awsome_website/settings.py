@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
+    'storage',
     'social_django',
     'crispy_forms',
     'debug_toolbar',
@@ -142,6 +143,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGOUT_REDIRECT_URL = 'dashboard'
+LOGIN_URL = 'login'
 
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
